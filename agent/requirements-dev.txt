@@ -1,0 +1,3 @@
+# Tests locales: con solo pytest corren los tests del flujo determinista.
+# Para correr tambien los de Strands (modelo guionado, sin AWS): pip install -r agent/requirements.txt
+pytest>=8.0

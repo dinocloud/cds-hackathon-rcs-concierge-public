@@ -1,0 +1,25 @@
+{
+  "app": "npx ts-node --prefer-ts-exts infra/bin/app.ts",
+  "watch": {
+    "include": [
+      "infra/**",
+      "lambdas/**"
+    ],
+    "exclude": [
+      "**/*.test.ts",
+      "node_modules",
+      "cdk.out"
+    ]
+  },
+  "context": {
+    "env": "dev",
+    "@aws-cdk/aws-lambda:recognizeLayerVersion": true,
+    "@aws-cdk/core:checkSecretUsage": true,
+    "@aws-cdk/aws-iam:minimizePolicies": true,
+    "@aws-cdk/core:target-partitions": [
+      "aws"
+    ],
+    "cli-telemetry": false
+  },
+  "notices": false
+}

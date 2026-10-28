@@ -1,0 +1,31 @@
+# Node
+node_modules/
+dist/
+*.tsbuildinfo
+npm-debug.log*
+
+# CDK
+cdk.out/
+cdk.context.json
+.cdk.staging/
+
+# Secretos y configuracion local
+.env
+.env.*
+
+
+# Python
+venv/
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+agent/build/
+
+# Editor / SO
+.DS_Store
+.idea/
+.vscode/
+
+# Salida de jest --coverage
+coverage/

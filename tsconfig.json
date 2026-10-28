@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "commonjs",
+    "lib": ["ES2022"],
+    "moduleResolution": "node",
+    "strict": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "forceConsistentCasingInFileNames": true,
+    "types": ["node", "jest"],
+    "outDir": "dist"
+  },
+  "include": ["infra/**/*.ts", "lambdas/**/*.ts", "scripts/**/*.ts"],
+  "exclude": ["node_modules", "cdk.out", "dist"]
+}

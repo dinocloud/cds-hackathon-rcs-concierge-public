@@ -1,0 +1,39 @@
+{
+  "name": "rs-concierge-rcs",
+  "version": "0.1.0",
+  "private": true,
+  "description": "POC hackathon AWS CDS Agentic AI: concierge de turnos por RCS con recordatorios y fallback a SMS (datos sinteticos).",
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc --noEmit",
+    "test": "jest",
+    "synth": "bash scripts/synth.sh",
+    "deploy": "bash scripts/deploy.sh",
+    "seed": "ts-node scripts/seed-synthetic-data.ts",
+    "cdk": "cdk"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.164",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^20.19.0",
+    "aws-cdk": "^2.1146.0",
+    "esbuild": "^0.28.2",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.4.15",
+    "ts-node": "^10.9.2",
+    "typescript": "~5.9.3"
+  },
+  "dependencies": {
+    "@aws-sdk/client-bedrock-agentcore": "^3.1154.0",
+    "@aws-sdk/client-dynamodb": "^3.1154.0",
+    "@aws-sdk/client-pinpoint-sms-voice-v2": "^3.1154.0",
+    "@aws-sdk/client-scheduler": "^3.1154.0",
+    "@aws-sdk/client-secrets-manager": "^3.1154.0",
+    "@aws-sdk/lib-dynamodb": "^3.1154.0",
+    "aws-cdk-lib": "^2.274.0",
+    "constructs": "^10.8.1"
+  }
+}
